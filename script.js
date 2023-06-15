@@ -33,6 +33,10 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
+//Modify Nodes and create an event listener that calls the function, when it plays one game it should display the message and the score
+//Once action = 2 changes, when click, show message and who won the round
+//Add dark mode
+/*
 function game() {
   let playerScore = 0;
   let computerScore = 0;
@@ -65,3 +69,4 @@ function game() {
 }
 
 game();
+*/
