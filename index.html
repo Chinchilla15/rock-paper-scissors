@@ -10,22 +10,42 @@
 
 </head>
 <body class="background">
-    <body>
-        
-    <h1 class="text rps">Rock, Paper, Scissors!</h1>
-    <p class="text score">0-0</p>
-    <p class="text message">Message</p>
-    <div class="boxContainer">
-        <div class="boxes">
-            <button class="btn rock-button"></button>
+    <section class="game">
+
+        <div  id="rps">Rock, Paper, Scissors!</div>
+
+        <div class="scoreBox"> 
+            <div class="playerBox">
+                <h2>Player</h2>
+                <p class="p-score">0</p>
+           </div>
+           <div class="computerBox">
+                <h2>Computer</h2>
+             <p class="c-score">0</p>
+           </div>
         </div>
-        <div class="boxes">
-            <button class="btn paper-button"></button>
+
+        <p class="result">Get ready!</p>
+
+        <div class="rounds">Rounds left: 5</div>
+
+        <div class="boxContainer">
+            <div class="boxes">
+                <button id="rock-button"></button>
+            </div>
+            <div class="boxes">
+                <button id="paper-button"></button>
+            </div>
+            <div class="boxes">
+                <button id="scissors-button"></button>
+            </div>
         </div>
-        <div class="boxes">
-            <button class="btn scissors-button"></button>
-        </div>
-    </div>
+
+        <div class="final"></div>
+
+        <button class="reload"></button>
+
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

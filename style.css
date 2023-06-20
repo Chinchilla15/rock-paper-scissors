@@ -10,27 +10,63 @@ body, html{
     background-color: #EBDABD;
 }
 
-.text{
+.scoreBox{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.p-score,
+.c-score{
 color: white;
 display: flex;
 align-items: center;
 justify-content: center;
+font-size: 75px;
+margin-top: 0;
 }
 
-.rps{
+h2{
+    font-size: 35px;
+}
+
+.playerBox{
+    margin-left: 175px;
+}
+
+.computerBox{
+    margin-right: 175px;
+}
+
+#rps{
     font-size: 55px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.score{
+#score{
     font-size: 110px;
     margin-bottom: 60px;
 }
 
-.message{
+.result{
     font-size: 38px;
     margin-top: 0;
-    padding-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
 
+.rounds{
+    display: flex;
+    justify-content: center;
+    color: #252525;
+    margin-top:0;
+    font-size: 25px;
+    margin-bottom: 75px;
 }
 
 .boxContainer{
@@ -43,37 +79,48 @@ justify-content: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
 }
 
-.btn{
+button{
     width: 160px;
     height: 160px;
     border-radius: 16px;
     border:none;
-    
 }
 
-.rock-button{
+#rock-button{
     background: url(icons/fist.png) center no-repeat;
+    margin-left: 150px;
 }
 
-.btn.rock-button:hover{
+#rock-button:hover{
     background-color: rgb(112, 0, 0);
 }
 
-.paper-button{
+#paper-button{
     background: url(icons/paper.png) center no-repeat;
 }
 
-.btn.paper-button:hover{
+#paper-button:hover{
     background-color: #01227d;
 }
 
-.scissors-button{
+#scissors-button{
     background: url(icons/scissors.png) center no-repeat;
+    margin-right: 150px;
 }
 
-.btn.scissors-button:hover{
+#scissors-button:hover{
     background-color: #167530;
+}
+
+.reload{
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: green;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
